@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 class="display-4">{% block title %}Caseta Bridge{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    Enter the IP address (or hostname) of your Caseta bridge device:
+  </div>
+
+  <div class="container mt-3">
+    <form method="post" action="{{ url_for('process_addr') }}">
+      <div class="row form-group justify-content-center">
+        <input class="form-control col-3 justify-content-center" id="server_addr" name="server_addr" value="{{ server_addr }}" area-describedby="addr_help" placeholder="192.168.1.100" required>
+        <small id="addr_help" class="form-text text-muted">The IP address of your Caseta bridge can usually be found in your router's control panel.</small>
+      </div>
+      <input class="btn btn-primary" type="submit" value="Continue">
+    </form>
+  </div>
+{% endblock %}

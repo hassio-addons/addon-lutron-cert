@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 class="display-4">{% block title %}Login to Lutron{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="m-2">
+      After logging in to Lutron you will be redirected to an "error" page. Copy
+      the URL of the "error" page to your clipboard, and paste it below.
+    </div>
+    <div class="m-2">
+      <a class="btn btn-primary" href="{{ authorize_url }}" target="_blank">Click here to login to Lutron</a>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <form method="post" action="{{ url_for('process_url') }}">
+      <div class="form-group">
+        <input class="form-control" id="redirected_url" name="redirected_url" size="60" area-describedby="url_help" placeholder="https://device-login.lutron.com/lutron_app_oauth_redirect?code=..." required>
+        <small id="url_help" class="form-text text-muted">Enter the URL of the "error" page you were redirected to (or the code in the URL).</small>
+      </div>
+      <input class="btn btn-secondary" type="submit" value="Continue">
+    </form>
+  </div>
+{% endblock %}

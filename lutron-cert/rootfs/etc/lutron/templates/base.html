@@ -1,0 +1,47 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Lutron Caseta</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/highlight.min.css') }}">
+
+<body class="bg-dark">
+  <section class="wrapper pt-5">
+    <div class="container bg-light p-4 mx-auto text-center" style="max-width: 700px;">
+      <header>
+        {% block header %}{% endblock %}
+      </header>
+
+      {% for category, message in get_flashed_messages(with_categories=True) %}
+        <div class="alert alert-{{ category }}" role="alert">
+          {{ message }}
+        </div>
+      {% endfor %}
+
+      {% block content %}{% endblock %}
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <small class="text-muted">
+        To start over at any time, <a href="{{ url_for('reset') }}" class="reset-link text-danger">click here</a>.
+      </small>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/highlight.min.js') }}"></script>
+
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    (function() {
+      $('.reset-link').click(function() {
+        return confirm("WARNING: THIS WILL DELETE THE CERTIFICATE FILES.\n" +
+                       "**THIS CANNOT BE UNDONE**\n\n" +
+                       "Do you wish to continue?");
+      })
+    })(jQuery);
+  </script>
+</body>

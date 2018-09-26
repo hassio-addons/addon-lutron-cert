@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 class="display-4">{% block title %}Success!{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    The following files were added to the <code>{{ ssl_path }}</code> directory:
+    <ul class="list-group my-3 d-inline-block text-left ssl-files">
+      {% for file in ssl_files %}
+        <li class="list-group-item">
+          <code><span class="hljs-string">{{ ssl_files[file] }}</span></code>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="container">
+    Add this to the Home Assistant <code>configuration.yaml</code> to enable Lutron Caseta:
+    <div class="config my-3">
+      <pre><code class="d-inline-block text-left rounded border"># Example configuration.yaml entry
+lutron_caseta:
+  host: {{ server_addr }}
+  keyfile: {{ ssl_files.key_file }}
+  certfile: {{ ssl_files.cert_file }}
+  ca_certs: {{ ssl_files.ca_file }}</code></pre>
+    </div>
+  </div>
+{% endblock %}
