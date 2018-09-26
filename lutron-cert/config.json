@@ -20,8 +20,7 @@
     "5817/tcp": 5817
   },
   "map": [
-    "ssl:rw",
-    "addons"
+    "ssl:rw"
   ],
   "options": {
     "log_level": "info"
