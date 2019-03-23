@@ -5,6 +5,9 @@ FROM ${BUILD_FROM}
 # Copy root filesystem
 COPY rootfs /
 
+# Copy Python requirements file
+COPY requirements.txt /tmp/
+
 # Setup base
 RUN \
     apk add --no-cache \
@@ -12,10 +15,7 @@ RUN \
         py3-cryptography=2.1.4-r1 \
         dbus=1.10.24-r1 \
     \
-    && python3 -m ensurepip \
-    && rm -r /usr/lib/python*/ensurepip \
-    \
-    && pip3 install "requests==2.19.1" "Flask==1.0.2"
+    && pip3 install --no-cache-dir -r /tmp/requirements.txt
 
 # Build arugments
 ARG BUILD_ARCH
