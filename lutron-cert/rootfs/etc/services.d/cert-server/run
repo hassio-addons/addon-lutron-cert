@@ -1,10 +1,7 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Lutron Certificate
 # Run the cert server
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
-hass.log.info "Starting Lutron certificate server"
+bashio::log.info "Starting Lutron certificate server..."
 exec python3 /opt/lutron/cert_server.py
