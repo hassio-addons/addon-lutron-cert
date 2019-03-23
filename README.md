@@ -162,7 +162,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018 Dale Higgs
+Copyright (c) 2018-2019 Dale Higgs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -207,8 +207,8 @@ SOFTWARE.
 [layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/lutron-cert.svg
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-lutron-cert.svg
 [lutron-caseta-docs]: https://www.home-assistant.io/components/lutron_caseta/
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [microbadger]: https://microbadger.com/images/hassioaddons/lutron-cert
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/lutron-cert.svg
 [reddit]: https://reddit.com/r/homeassistant
