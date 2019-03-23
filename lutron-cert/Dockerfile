@@ -11,8 +11,8 @@ COPY requirements.txt /tmp/
 # Setup base
 RUN \
     apk add --no-cache \
-        py3-cryptography=2.1.4-r1 \
         python3=3.6.8-r1 \
+        py3-cryptography=2.4.2-r2 \
         dbus=1.10.24-r1 \
     \
     && pip3 install --no-cache-dir -r /tmp/requirements.txt
