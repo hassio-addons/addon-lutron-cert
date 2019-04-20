@@ -20,6 +20,9 @@
   "ports": {
     "5817/tcp": 5817
   },
+  "ports_description": {
+    "5817/tcp": "Web interface"
+  },
   "map": [
     "ssl:rw"
   ],
