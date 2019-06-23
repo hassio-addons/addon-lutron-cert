@@ -9,6 +9,7 @@ COPY rootfs /
 COPY requirements.txt /tmp/
 
 # Setup base
+ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         gcc=8.3.0-r0 \
@@ -19,7 +20,11 @@ RUN \
     && apk add --no-cache \
         dbus=1.12.16-r0 \
     \
-    && pip3 install --no-cache-dir -r /tmp/requirements.txt \
+    && pip3 install \
+        --no-cache-dir \
+        --prefer-binary \
+        --find-links "https://wheels.hass.io/alpine-3.10/${BUILD_ARCH}/" \
+        -r /tmp/requirements.txt \
     \
     && find /usr/local \
         \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
@@ -30,7 +35,6 @@ RUN \
 
 
 # Build arugments
-ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
