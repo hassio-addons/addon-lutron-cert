@@ -12,7 +12,7 @@ COPY requirements.txt /tmp/
 ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=8.3.0-r0 \
+        gcc=9.2.0-r3 \
         libc-dev=0.7.1-r0 \
         libffi-dev=3.2.1-r6 \
         openssl-dev=1.1.1c-r0 \
