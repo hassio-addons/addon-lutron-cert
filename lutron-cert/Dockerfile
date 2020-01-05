@@ -18,7 +18,7 @@ RUN \
         openssl-dev=1.1.1d-r3 \
     \
     && apk add --no-cache \
-        dbus=1.12.16-r0 \
+        dbus=1.12.16-r2 \
     \
     && pip3 install \
         --no-cache-dir \
