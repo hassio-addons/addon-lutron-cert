@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Lutron Certificate
+# Home Assistant Community Add-on: Lutron Certificate
 # Run the cert server
 # ==============================================================================
 bashio::log.info "Starting Lutron certificate server..."

@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "Get Lutron Cert - Community Hass.io Add-on for Home Assistant"
+  description: "Get Lutron Cert - Home Assistant Community Add-ons"
   homepage: https://addons.community
-  topics: lutron, lutron-caseta, lutron-cert, cert, ssl, hassio-addons, hassio, hass, home-assistant, homeassistant, home-automation
+  topics: lutron, lutron-caseta, lutron-cert, cert, ssl, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false
