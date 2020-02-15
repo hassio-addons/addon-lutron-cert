@@ -72,10 +72,8 @@ configuration options to play around with.
 
 Lutron Certificate add-on configuration:
 
-```json
-{
-  "log_level": "info"
-}
+```yaml
+log_level: info
 ```
 
 ### Option: `log_level`
