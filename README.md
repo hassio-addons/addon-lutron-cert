@@ -186,7 +186,7 @@ SOFTWARE.
 [discord]: https://discord.me/hassioaddons
 [dockerhub]: https://hub.docker.com/r/hassioaddons/lutron-cert
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/t/community-hass-io-add-on-lutron-certificate/70317
+[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-lutron-certificate/70317?u=frenck
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-lutron-cert/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-lutron-cert/pipelines
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
