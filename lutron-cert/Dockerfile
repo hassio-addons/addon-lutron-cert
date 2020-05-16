@@ -15,7 +15,7 @@ RUN \
         gcc=9.2.0-r4 \
         libc-dev=0.7.2-r0 \
         libffi-dev=3.2.1-r6 \
-        openssl-dev=1.1.1d-r3 \
+        openssl-dev=1.1.1g-r0 \
     \
     && apk add --no-cache \
         dbus=1.12.16-r2 \
