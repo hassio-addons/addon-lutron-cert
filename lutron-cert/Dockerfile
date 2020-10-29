@@ -14,7 +14,7 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         gcc=9.3.0-r2 \
         libc-dev=0.7.2-r0 \
-        libffi-dev=3.2.1-r6 \
+        libffi-dev=3.3-r2 \
         openssl-dev=1.1.1g-r0 \
     \
     && apk add --no-cache \
