@@ -10,7 +10,7 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -100,18 +100,18 @@ SOFTWARE.
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/dale3h
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-lutron-cert.svg
-[commits]: https://github.com/hassio-addons/addon-lutron-cert/commits/master
+[commits]: https://github.com/hassio-addons/addon-lutron-cert/commits/main
 [contributors]: https://github.com/hassio-addons/addon-lutron-cert/graphs/contributors
 [dale3h]: https://github.com/dale3h
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
 [dockerhub]: https://hub.docker.com/r/hassioaddons/lutron-cert
-[docs]: https://github.com/hassio-addons/addon-lutron-cert/blob/master/lutron-cert/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-lutron-cert/blob/main/lutron-cert/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-lutron-certificate/70317?u=frenck
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-lutron-cert/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-lutron-cert/pipelines
+[github-actions-shield]: https://github.com/hassio-addons/addon-lutron-cert/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-lutron-cert/actions
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-lutron-cert/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-lutron-cert.svg
