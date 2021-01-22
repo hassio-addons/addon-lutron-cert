@@ -9,7 +9,6 @@
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "boot": "manual",
   "init": false,
-  "hassio_role": "default",
   "hassio_api": true,
   "homeassistant_api": true,
   "ports": {
@@ -19,7 +18,6 @@
     "5817/tcp": "Web interface"
   },
   "map": ["ssl:rw"],
-  "options": {},
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
   }
