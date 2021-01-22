@@ -73,8 +73,7 @@ you are troubleshooting.
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of `MAJOR.MINOR.PATCH`. In a @xxxxshell, the version will be incremented
@@ -136,7 +135,6 @@ SOFTWARE.
 [discord]: https://discord.me/hassioaddons
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-lutron-certificate/70317?u=frenck
 [issue]: https://github.com/hassio-addons/addon-lutron-cert/issues
-[keepchangelog]: https://keepachangelog.com/en/1.0.0/
 [lutron-caseta-docs]: https://www.home-assistant.io/components/lutron_caseta/
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-lutron-cert/releases
