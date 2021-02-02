@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base-python:5.3.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base-python/amd64:6.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,18 +12,18 @@ COPY requirements.txt /tmp/
 ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=9.3.0-r2 \
+        gcc=10.2.1_pre1-r3 \
         libc-dev=0.7.2-r3 \
         libffi-dev=3.3-r2 \
-        openssl-dev=1.1.1g-r0 \
+        openssl-dev=1.1.1i-r0 \
     \
     && apk add --no-cache \
-        dbus=1.12.18-r0 \
+        dbus=1.12.20-r1 \
     \
     && pip3 install \
         --no-cache-dir \
         --prefer-binary \
-        --find-links "https://wheels.home-assistant.io/alpine-3.12/${BUILD_ARCH}/" \
+        --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
         -r /tmp/requirements.txt \
     \
     && find /usr/local \
@@ -31,7 +31,7 @@ RUN \
         -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
         -exec rm -rf '{}' + \
     \
-    && apk del --purge .build-dependencies
+    && apk del --no-cache --purge .build-dependencies
 
 
 # Build arguments
