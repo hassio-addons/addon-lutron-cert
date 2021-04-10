@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base-python/amd64:6.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base-python/amd64:6.0.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -15,7 +15,7 @@ RUN \
         gcc=10.2.1_pre1-r3 \
         libc-dev=0.7.2-r3 \
         libffi-dev=3.3-r2 \
-        openssl-dev=1.1.1i-r0 \
+        openssl-dev=1.1.1k-r0 \
     \
     && apk add --no-cache \
         dbus=1.12.20-r1 \
